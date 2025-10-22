@@ -24,6 +24,33 @@
         </section>
 
         <section class="project-detail">
+    <div class="project-header">
+        <h2>evaluating compositional reasoning in LLMs</h2>
+        <div class="project-meta">
+            <span class="date">June 2025 - July 2025</span>
+            <span class="supervisor">with Prof. Pankaj Pansari</span>
+        </div>
+    </div>
+    <p class="project-description">
+        Research project investigating whether large language models genuinely understand recursive problem-solving and compositional generalization, or simply memorize templates from training data. Using Scheme as a controlled evaluation medium, this work probes the limits of LLM reasoning capabilities.
+    </p>
+    <h4>key contributions:</h4>
+    <ul>
+        <li>Designed experimental pipeline to evaluate LLM code generation on competitive programming problems from DeepMind Code Contests dataset</li>
+        <li>Developed novel modified Scheme methodology: replaced all Scheme primitives (map, cons, filter) with arbitrary tokens to eliminate memorization</li>
+        <li>Built sandboxed interpreter-based evaluation system in Python for safe execution of untrusted LLM-generated code</li>
+        <li>Conducted cross-language comparison study between Python (81% pass@5) and Scheme (62% pass@5) to isolate language familiarity effects</li>
+        <li>Demonstrated that removing lexical cues caused approx. 16% performance drop, with scaffolding providing minimal recovery (46% → 48%)</li>
+        <li>Findings reveal fundamental limitations in current LLMs' ability to perform true compositional reasoning versus surface pattern matching</li>
+    </ul>
+    <h4>technologies:</h4>
+    <p class="tech-stack">Python, Scheme, Anthropic APIs, Subprocess Sandboxing, AST Parsing, Code Synthesis Evaluation</p>
+    <div class="project-links">
+        <a href="#" class="btn" style="background-color: #666; cursor: default;">preprint paper coming soon</a>
+    </div>
+</section>
+
+        <section class="project-detail">
             <div class="project-header">
                 <h2>baba is RL</h2>
                 <div class="project-meta">
